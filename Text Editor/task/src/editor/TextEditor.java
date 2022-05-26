@@ -51,8 +51,8 @@ public class TextEditor extends JFrame {
                 textArea,
                 useRegexCheckBox);
         ActionListener toggleUseRegexListener = getUseRegexListener(useRegexCheckBox);
-        ActionListener prevMatchListener  = getPrevMatchListener(textArea);
-        ActionListener nextMatchListener  = getNextMatchListener(textArea);
+        ActionListener prevMatchListener = getPrevMatchListener(textArea);
+        ActionListener nextMatchListener = getNextMatchListener(textArea);
 
         JMenuBar menuBar = new JMenuBar();
         setJMenuBar(menuBar);

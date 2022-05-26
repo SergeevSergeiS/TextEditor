@@ -8,8 +8,8 @@ public class ElementsFactory {
 
     public static JButton getButton(String name) {
         JButton button = new JButton();
-        ImageIcon icon = new ImageIcon (Constants.iconsPaths.get(name));
-        button.setMargin(new Insets(0,0,0,0));
+        ImageIcon icon = new ImageIcon(Constants.iconsPaths.get(name));
+        button.setMargin(new Insets(0, 0, 0, 0));
         button.setName(name);
         button.setIcon(icon);
         return button;
@@ -21,7 +21,7 @@ public class ElementsFactory {
         return button;
     }
 
-    public static JMenuItem getMenuItem(String name, ActionListener actionListener ) {
+    public static JMenuItem getMenuItem(String name, ActionListener actionListener) {
         JMenuItem menuItem = new JMenuItem(Constants.menuTitles.get(name));
         menuItem.setName(name);
         menuItem.addActionListener(actionListener);
